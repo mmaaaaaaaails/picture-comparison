@@ -31,6 +31,14 @@
 
 @media (max-width: 414px) {
     .left, .right {
-        height: 147px
+        height: 147px;
     }
 }
+
+@media (min-width: 900px) {
+    .right {
+        width: 33%;
+    }
+}
+
+
