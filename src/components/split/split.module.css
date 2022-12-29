@@ -1,6 +1,6 @@
 .left {
     width: 100%;
-    height: 600px;
+    height: 300px;
     position: absolute;
     z-index: 1;
     background-position: center;
@@ -9,8 +9,8 @@
 }
 
 .right {
-    width: 100%;
-    height: 600px;
+    width: 47%;
+    height: 300px;
     max-width: 1000px;
     position: relative;
     background-position: center;
@@ -27,4 +27,10 @@
     position: absolute;
     z-index: 2;
     cursor: pointer;
+}
+
+@media (max-width: 414px) {
+    .left, .right {
+        height: 147px
+    }
 }

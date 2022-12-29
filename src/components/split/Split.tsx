@@ -80,12 +80,14 @@ const Split = ({left, right}: SplitProps) => {
         <div
             className={styles.right}
             ref={ref}
-            style={{background: `url(${right})`}}
+            style={{background: `url(${right})`, backgroundSize: 'contain'}}
         >
             <div
                 className={styles.left}
                 style={{background: `url(${left})`,
-                    clipPath: `polygon(0% 0%, ${widthLeft}px 0%, ${widthLeft}px 100%, 0% 100%)`}}
+                    clipPath: `polygon(0% 0%, ${widthLeft}px 0%, ${widthLeft}px 100%, 0% 100%)`,
+                    backgroundSize: 'contain'
+                }}
             />
             <div
                 style={{left: lineX}}
